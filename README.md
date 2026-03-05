@@ -1,21 +1,24 @@
-# 🚀 Jenkins CI Pipeline with Maven and Spring Boot
+# 🚀 Jenkins Webhook CI Pipeline with Maven and Spring Boot
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates a **Continuous Integration (CI) pipeline using Jenkins integrated with GitHub**.
+This project demonstrates a **Continuous Integration (CI) pipeline using Jenkins integrated with GitHub Webhooks**.
 
-The application used in this pipeline is a simple **Spring Boot Employee API built with Maven**. Jenkins automatically reads the **Jenkinsfile from the GitHub repository** and executes the pipeline to build and package the application.
+The application used in this pipeline is a simple **Spring Boot Employee API built with Maven**. Jenkins reads the **Jenkinsfile from the GitHub repository** and automatically executes the pipeline whenever code is pushed to the repository.
+
+Using **GitHub Webhooks**, the pipeline runs **automatically without manual intervention**, enabling real-time Continuous Integration.
 
 This project showcases how modern DevOps workflows automate the following processes:
 
 - Pulling source code from GitHub  
+- Triggering Jenkins pipeline automatically using **GitHub Webhook**  
 - Building the application using Maven  
 - Running automated tests  
-- Packaging the application as an executable JAR artifact  
+- Packaging the application as an executable **JAR artifact**
 
-It demonstrates a practical **CI pipeline workflow used in real DevOps environments**.
+It demonstrates a practical **automated CI pipeline workflow used in real DevOps environments**.
 
 ---
 
@@ -27,13 +30,14 @@ It demonstrates a practical **CI pipeline workflow used in real DevOps environme
 - Jenkins  
 - Git  
 - GitHub  
+- GitHub Webhooks  
 
 ---
 
 ## 📂 Project Structure
 
 ```
-jenkins-ci
+webhook-project
 │
 ├── Jenkinsfile
 ├── pom.xml
@@ -83,10 +87,12 @@ Packages the application and generates the final **JAR artifact**.
 
 ---
 
-## 🔄 CI Pipeline Workflow
+## 🔄 Automated CI Workflow
 
 ```
 Developer Push Code → GitHub
+           ↓
+       GitHub Webhook
            ↓
         Jenkins
            ↓
@@ -100,6 +106,8 @@ Developer Push Code → GitHub
            ↓
      Artifact (.jar)
 ```
+
+The pipeline is triggered **automatically whenever new code is pushed to GitHub**, eliminating the need for manual **Build Now** execution.
 
 ---
 
@@ -153,6 +161,7 @@ This project proves understanding of:
 
 - Jenkins CI pipeline creation  
 - GitHub integration with Jenkins  
+- **GitHub Webhook automation**  
 - Pipeline as Code using **Jenkinsfile**  
 - Maven build lifecycle  
 - Automated build, test, and packaging  
@@ -164,12 +173,13 @@ This project proves understanding of:
 
 This repository demonstrates real-world DevOps practices including:
 
-- Continuous Integration (CI)  
+- Continuous Integration (CI) automation  
+- Webhook-based pipeline triggering  
 - Build automation  
 - Source control integration  
 - Artifact generation for deployment workflows  
 
-These are core skills Required in **modern DevOps and cloud environments**.
+These are core skills required in **modern DevOps and cloud environments**.
 
 ---
 
