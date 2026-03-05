@@ -169,7 +169,7 @@ This repository demonstrates real-world DevOps practices including:
 - Source control integration  
 - Artifact generation for deployment workflows  
 
-These are core skills required in **modern DevOps and cloud environments**.
+These are core skills Required in **modern DevOps and cloud environments**.
 
 ---
 
