@@ -5,28 +5,17 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/nasiroddin-khatib/jenkins-ci.git'
+                git 'https://github.com/nasiroddin-khatib/webhook-project'
             }
         }
+	
 
-        stage('Build') {
-            steps {
-                sh 'mvn compile'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-
-        stage('Package') {
-            steps {
-                sh 'mvn package'
-            }
-        }
-
-    }
+	stage('build') {
+	    steps {
+		sh 'mvn clean package'
+	  }
+	}
+        
+   }
 }
 
